@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Surya Teja | Java Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Java Full Stack Developer building scalable backend systems and responsive frontends with Java, Spring Boot, REST APIs, React and MySQL."
+    />
+    <meta name="author" content="Surya Teja" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      property="og:title"
+      content="Surya Teja | Java Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Java Full Stack Developer building scalable backend systems and responsive frontends with Java, Spring Boot, REST APIs, React and MySQL."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Animation libs -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- EmailJS (used to send the contact form directly, no mail-app redirect) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- Background Video Container -->
+    <div class="video-bg-container">
+      <video autoplay muted loop playsinline class="video-bg">
+        <source src="https://res.cloudinary.com/gswpxf6g/video/upload/v1786166622/portfolio-video_ktjpqa.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div id="cursor-dot" class="cursor-dot"></div>
+    <div id="cursor-ring" class="cursor-ring"></div>
+
+    <!-- Scroll progress -->
+    <div id="progress-indicator"><div id="progress-bar"></div></div>
+
+    <!-- Header -->
+    <nav id="site-header">
+      <div class="section-container nav-row">
+        <a href="#home" class="logo"
+          ><span class="accent">&lt;</span>ST<span class="accent"
+            >/&gt;</span
+          ></a
+        >
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a
+            class="resume-btn"
+            href="https://drive.google.com/file/d/1tXkEV4bFxKHLy5B7a4aQnBMGdg2MMPGN/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+            >Resume</a
+          >
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="section-container">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section id="home" class="section-container">
+        <div class="hero-content">
+          <h5 class="staggered-reveal hero-eyebrow">Hi, my name is</h5>
+          <h1 class="hero-title">
+            <span class="staggered-reveal text-gradient">Surya</span
+            ><span class="staggered-reveal"> Teja</span>
+          </h1>
+          <p class="hero-typed-wrap">
+            <span id="typed" class="staggered-reveal hero-typed"></span>
+          </p>
+          <p class="staggered-reveal hero-desc">
+            Passionate Java Full Stack Developer focused on building scalable
+            backend systems, responsive frontend applications and modern full
+            stack software solutions using Java, Spring Boot, React, REST APIs
+            and cloud technologies.
+          </p>
+
+          <div class="staggered-reveal" id="hero-profiles"></div>
+
+          <div class="staggered-reveal hero-actions">
+            <a href="#contact" class="btn-primary">Let's Talk</a>
+            <a
+              href="https://drive.google.com/file/d/1tXkEV4bFxKHLy5B7a4aQnBMGdg2MMPGN/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              class="btn-outline"
+              >View Resume</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about">
+        <div class="section-container about-inner">
+          <h2 class="about-quote" id="about-quote">
+            <span class="about-1"
+              >I'm Surya Teja, a Java Full Stack Developer who enjoys turning
+              real problems into clean, working software. </span
+            ><span class="about-2"
+              >I care more about writing code I can explain, maintain and defend
+              than about shipping something that merely looks finished.</span
+            >
+          </h2>
+
+          <div class="about-body">
+            <div class="about-grid">
+              <div class="about-text">
+                <p class="about-label about-reveal">About Me</p>
+                <p class="about-reveal">
+                  My route into software wasn't the usual one. I graduated in
+                  Electrical and Electronics Engineering with an 8.51 CGPA, and
+                  somewhere along the way I realised I enjoyed debugging logic
+                  far more than debugging circuits. So I committed to it
+                  properly — an intensive Java Full Stack program at Tap
+                  Academy, followed by months of building projects on my own
+                  instead of only watching tutorials.
+                </p>
+                <p class="about-reveal">
+                  Most of my depth is on the backend. I'm comfortable with Core
+                  Java and OOP, collections, exception handling and
+                  multithreading, and I've built real applications on Servlets,
+                  JSP, JDBC and Spring Boot with Hibernate and MySQL behind
+                  them. I structure projects with layered MVC and the DAO
+                  pattern because separating concerns is what makes a codebase
+                  survivable after the first month.
+                </p>
+                <p class="about-reveal">
+                  On the frontend I work with HTML, CSS, JavaScript and React —
+                  enough to build responsive, accessible interfaces that do
+                  justice to the backend behind them. Every project in this
+                  portfolio was designed, built and deployed by me, from the
+                  database schema to the final layout.
+                </p>
+                <p class="about-reveal">
+                  To be honest about where I stand: I'm early in my career. I
+                  don't have production experience at scale yet, and I'm still
+                  learning cloud deployment, testing discipline and system
+                  design in depth. What I do have is consistency — 100+ DSA
+                  problems solved, nine shipped projects, and a habit of
+                  finishing what I start. I'm looking for a team where I can
+                  contribute real work and grow fast under people who build
+                  things properly.
+                </p>
+              </div>
+
+              <div class="about-values" id="about-values"></div>
+            </div>
+
+            <div class="stats-grid" id="stats-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <div class="section-container skills-inner">
+          <div class="skills-wrapper">
+            <p class="staggered-reveal section-eyebrow">Skills</p>
+            <h2 class="text-gradient staggered-reveal section-title">
+              My Skills
+            </h2>
+            <p class="staggered-reveal section-sub">
+              I build full stack applications with Java, Spring Boot, REST APIs
+              and React — backed by solid MySQL data design.
+            </p>
+
+            <div id="skills-groups"></div>
+            <div class="tags-grid" id="skill-tags"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <div class="section-container">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="text-gradient section-title">Featured Work</h2>
+          <p class="section-sub">
+            Nine shipped applications — from enterprise Java systems to polished
+            frontend products. Every one is live and open source.
+          </p>
+
+          <div class="filter-row">
+            <div class="filter-pills glass-panel">
+              <button class="filter-pill active" data-filter="all">All</button>
+              <button class="filter-pill" data-filter="backend">
+                Enterprise
+              </button>
+              <button class="filter-pill" data-filter="web">Web Apps</button>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projects-grid"></div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education">
+        <div class="section-container">
+          <p class="section-eyebrow">Journey</p>
+          <h2 class="text-gradient section-title">Education</h2>
+          <p class="section-sub">A quick recap of how I got here.</p>
+
+          <div class="timeline" id="education-timeline"></div>
+
+          <h2 class="text-gradient certs-title">Certifications</h2>
+          <div class="certs-grid" id="certs-grid"></div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="section-container">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="text-gradient section-title">Let's Connect</h2>
+          <p class="section-sub">
+            Have a role, project or idea in mind? My inbox is always open.
+          </p>
+
+          <div class="contact-grid">
+            <div>
+              <div class="contact-links" id="contact-links"></div>
+              <div class="social-profiles" id="social-profiles"></div>
+            </div>
+
+            <form id="contact-form" class="glass-panel contact-form">
+              <h3>Send a Message</h3>
+              <div class="form-fields">
+                <div class="form-field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" placeholder="Your name" />
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about the opportunity…"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form-submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="site-footer">
+      <div class="section-container footer-inner">
+        <h2>Feel free to connect on social media.</h2>
+        <div id="footer-profiles"></div>
+        <a href="#contact" class="btn-secondary">Let's Talk</a>
+        <p class="footer-note">Designed &amp; developed by Surya Teja</p>
+      </div>
+    </footer>
+
+    <div id="toast"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
